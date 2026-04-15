@@ -1,11 +1,10 @@
-// ===============================
+
 // Calculator History Array
-// ===============================
+
 const history = [];
 
-// ===============================
+
 // Helper Function: Add to History
-// ===============================
 function addToHistory(num1, num2, operator, result) {
   history.push({
     operand1: num1,
@@ -15,9 +14,8 @@ function addToHistory(num1, num2, operator, result) {
   });
 }
 
-// ===============================
-// Arithmetic Functions
-// ===============================
+ 
+
 
 // Addition
 function add(a, b) {
@@ -51,9 +49,9 @@ function divide(a, b) {
   return result;
 }
 
-// ===============================
+
 // Display History Function
-// ===============================
+
 function displayHistory() {
   if (history.length === 0) {
     console.log("No calculations yet.");
@@ -68,13 +66,12 @@ function displayHistory() {
   });
 }
 
-// ===============================
-// Testing the Calculator
-// ===============================
 
-console.log(add(5, 3));        // 8
-console.log(subtract(10, 4));  // 6
-console.log(multiply(6, 7));   // 42
-console.log(divide(20, 5));    // 4
+// Testing the Calculator
+
+console.log(add(5, 3));        
+console.log(subtract(10, 4));  
+console.log(multiply(6, 7));   
+console.log(divide(20, 5));    
 
 displayHistory();
