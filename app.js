@@ -1,10 +1,10 @@
-
 // Calculator History Array
 
 const history = [];
 
 
 // Helper Function: Add to History
+
 function addToHistory(num1, num2, operator, result) {
   history.push({
     operand1: num1,
